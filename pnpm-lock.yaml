@@ -11,6 +11,9 @@ dependencies:
   '@nextui-org/react':
     specifier: ^2.2.9
     version: registry.npmmirror.com/@nextui-org/react@2.2.9(@types/react@18.2.48)(framer-motion@10.18.0)(react-dom@18.2.0)(react@18.2.0)(tailwind-variants@0.1.20)(tailwindcss@3.4.1)
+  '@prisma/client':
+    specifier: 5.8.1
+    version: registry.npmmirror.com/@prisma/client@5.8.1(prisma@5.8.1)
   framer-motion:
     specifier: ^10.18.0
     version: registry.npmmirror.com/framer-motion@10.18.0(react-dom@18.2.0)(react@18.2.0)
@@ -55,6 +58,9 @@ devDependencies:
   postcss:
     specifier: ^8
     version: registry.npmmirror.com/postcss@8.4.33
+  prisma:
+    specifier: ^5.8.1
+    version: registry.npmmirror.com/prisma@5.8.1
   tailwindcss:
     specifier: ^3.3.0
     version: registry.npmmirror.com/tailwindcss@3.4.1
@@ -2079,6 +2085,59 @@ packages:
     engines: {node: '>=14'}
     requiresBuild: true
     optional: true
+
+  registry.npmmirror.com/@prisma/client@5.8.1(prisma@5.8.1):
+    resolution: {integrity: sha512-xQtMPfbIwLlbm0VVIVQY2yqQVOxPwRQhvIp7Z3m2900g1bu/zRHKhYZJQWELqmjl6d8YwBy0K2NvMqh47v1ubw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/client/-/client-5.8.1.tgz}
+    id: registry.npmmirror.com/@prisma/client/5.8.1
+    name: '@prisma/client'
+    version: 5.8.1
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      prisma: registry.npmmirror.com/prisma@5.8.1
+    dev: false
+
+  registry.npmmirror.com/@prisma/debug@5.8.1:
+    resolution: {integrity: sha512-tjuw7eA0Us3T42jx9AmAgL58rzwzpFGYc3R7Y4Ip75EBYrKMBA1YihuWMcBC92ILmjlQ/u3p8VxcIE0hr+fZfg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/debug/-/debug-5.8.1.tgz}
+    name: '@prisma/debug'
+    version: 5.8.1
+
+  registry.npmmirror.com/@prisma/engines-version@5.8.1-1.78caf6feeaed953168c64e15a249c3e9a033ebe2:
+    resolution: {integrity: sha512-f5C3JM3l9yhGr3cr4FMqWloFaSCpNpMi58Om22rjD2DOz3owci2mFdFXMgnAGazFPKrCbbEhcxdsRfspEYRoFQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/engines-version/-/engines-version-5.8.1-1.78caf6feeaed953168c64e15a249c3e9a033ebe2.tgz}
+    name: '@prisma/engines-version'
+    version: 5.8.1-1.78caf6feeaed953168c64e15a249c3e9a033ebe2
+
+  registry.npmmirror.com/@prisma/engines@5.8.1:
+    resolution: {integrity: sha512-TJgYLRrZr56uhqcXO4GmP5be+zjCIHtLDK20Cnfg+o9d905hsN065QOL+3Z0zQAy6YD31Ol4u2kzSfRmbJv/uA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/engines/-/engines-5.8.1.tgz}
+    name: '@prisma/engines'
+    version: 5.8.1
+    requiresBuild: true
+    dependencies:
+      '@prisma/debug': registry.npmmirror.com/@prisma/debug@5.8.1
+      '@prisma/engines-version': registry.npmmirror.com/@prisma/engines-version@5.8.1-1.78caf6feeaed953168c64e15a249c3e9a033ebe2
+      '@prisma/fetch-engine': registry.npmmirror.com/@prisma/fetch-engine@5.8.1
+      '@prisma/get-platform': registry.npmmirror.com/@prisma/get-platform@5.8.1
+
+  registry.npmmirror.com/@prisma/fetch-engine@5.8.1:
+    resolution: {integrity: sha512-+bgjjoSFa6uYEbAPlklfoVSStOEfcpheOjoBoNsNNSQdSzcwE2nM4Q0prun0+P8/0sCHo18JZ9xqa8gObvgOUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/fetch-engine/-/fetch-engine-5.8.1.tgz}
+    name: '@prisma/fetch-engine'
+    version: 5.8.1
+    dependencies:
+      '@prisma/debug': registry.npmmirror.com/@prisma/debug@5.8.1
+      '@prisma/engines-version': registry.npmmirror.com/@prisma/engines-version@5.8.1-1.78caf6feeaed953168c64e15a249c3e9a033ebe2
+      '@prisma/get-platform': registry.npmmirror.com/@prisma/get-platform@5.8.1
+
+  registry.npmmirror.com/@prisma/get-platform@5.8.1:
+    resolution: {integrity: sha512-wnA+6HTFcY+tkykMokix9GiAkaauPC5W/gg0O5JB0J8tCTNWrqpnQ7AsaGRfkYUbeOIioh6woDjQrGTTRf1Zag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@prisma/get-platform/-/get-platform-5.8.1.tgz}
+    name: '@prisma/get-platform'
+    version: 5.8.1
+    dependencies:
+      '@prisma/debug': registry.npmmirror.com/@prisma/debug@5.8.1
 
   registry.npmmirror.com/@react-aria/breadcrumbs@3.5.9(react@18.2.0):
     resolution: {integrity: sha512-asbXTL5NjeHl1+YIF0K70y8tNHk8Lb6VneYH8yOkpLO49ejyNDYBK0tp0jtI9IZAQiTa2qkhYq58c9LloTwebQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-aria/breadcrumbs/-/breadcrumbs-3.5.9.tgz}
@@ -5949,6 +6008,16 @@ packages:
     version: 1.2.1
     engines: {node: '>= 0.8.0'}
     dev: true
+
+  registry.npmmirror.com/prisma@5.8.1:
+    resolution: {integrity: sha512-N6CpjzECnUHZ5beeYpDzkt2rYpEdAeqXX2dweu6BoQaeYkNZrC/WJHM+5MO/uidFHTak8QhkPKBWck1o/4MD4A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prisma/-/prisma-5.8.1.tgz}
+    name: prisma
+    version: 5.8.1
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': registry.npmmirror.com/@prisma/engines@5.8.1
 
   registry.npmmirror.com/prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz}
