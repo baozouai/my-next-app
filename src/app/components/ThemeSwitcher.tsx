@@ -1,9 +1,9 @@
 // app/components/ThemeSwitcher.tsx
 'use client';
 
+import { useEffect, useState, FC } from 'react';
 import { useTheme } from 'next-themes';
 import { Button } from '@nextui-org/react'
-import { useEffect, useState } from 'react';
 import { SunMoon, Moon } from 'lucide-react'
 
 const Theme = {
@@ -11,7 +11,9 @@ const Theme = {
   Dark: 'dark'
 } as const
 
-export function ThemeSwitcher(){
+export const ThemeSwitcher: FC<{
+  className?: string
+}> = ({ className }) => {
   const [ mounted, setMounted ] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -24,7 +26,7 @@ export function ThemeSwitcher(){
   const isLight = theme === Theme.Light
 
   return (
-    <Button isIconOnly color='warning' variant='faded' aria-label='theme' onClick={() => setTheme(isLight ? Theme.Dark : Theme.Light)}>
+    <Button className={className} isIconOnly color='warning' variant='faded' aria-label='theme' onClick={() => setTheme(isLight ? Theme.Dark : Theme.Light)}>
       { isLight ? <Moon/> : <SunMoon />}
     </Button> 
   )
