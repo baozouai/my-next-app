@@ -17,7 +17,8 @@ class BaseRequest{
   }
 }
 function Request<T = any>(url: string, args: T, method = 'POST'){
-  return fetch(`${process.env.BASE_URL}/${url}`, { 
+  console.log('process.env.BASE_URL=====>', process.env.BASE_URL)
+  return fetch(`${process.env.BASE_URL || ''}api${url}`, { 
     method, 
     headers: {
       'Content-Type': 'application/json'

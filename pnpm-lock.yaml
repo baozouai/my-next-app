@@ -26,6 +26,9 @@ dependencies:
   next:
     specifier: 14.1.0
     version: registry.npmmirror.com/next@14.1.0(react-dom@18.2.0)(react@18.2.0)
+  next-cloudinary:
+    specifier: ^5.20.0
+    version: registry.npmmirror.com/next-cloudinary@5.20.0(next@14.1.0)(react@18.2.0)
   next-themes:
     specifier: ^0.2.1
     version: registry.npmmirror.com/next-themes@0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -196,6 +199,44 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       csstype: registry.npmmirror.com/csstype@3.1.1
+    dev: false
+
+  registry.npmmirror.com/@cloudinary-util/url-loader@4.2.0:
+    resolution: {integrity: sha512-fpCFqFPAN/f9Gt//25qLXNDYwy5EcOudRzDPOrsEBH6aMwEdFaJuPxvLiP0IP5MCihKji/XDr9QJQ9Wa+amNSA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary-util/url-loader/-/url-loader-4.2.0.tgz}
+    name: '@cloudinary-util/url-loader'
+    version: 4.2.0
+    dependencies:
+      '@cloudinary-util/util': registry.npmmirror.com/@cloudinary-util/util@3.0.0
+      '@cloudinary/url-gen': registry.npmmirror.com/@cloudinary/url-gen@1.15.0
+      zod: registry.npmmirror.com/zod@3.22.4
+    dev: false
+
+  registry.npmmirror.com/@cloudinary-util/util@2.4.0:
+    resolution: {integrity: sha512-RJW/K1hvm+qL2civTWgg7iKdTPDMLmpFBvH03KUkDxuDk/xi9E9x9nPthEsmdDy65GdCcZm0UKnErXXgKzMOQQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary-util/util/-/util-2.4.0.tgz}
+    name: '@cloudinary-util/util'
+    version: 2.4.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary-util/util@3.0.0:
+    resolution: {integrity: sha512-o6cJsN49OIelLcSkqUf4WzgefpePDFsAaeQfJbpcKhVdtvmWv71K0oZwMXuX62IY1OolqIg0etMiHtWZPhvPNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary-util/util/-/util-3.0.0.tgz}
+    name: '@cloudinary-util/util'
+    version: 3.0.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary/transformation-builder-sdk@1.10.1:
+    resolution: {integrity: sha512-UUb1wS/eWCf4YBThGszoBBzH6kP+frdd5JeJkF0/SOwbX3tkcrdzxD+Srn5GXPCqzf6Gw1nrGrv/3U9hiZP55A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.10.1.tgz}
+    name: '@cloudinary/transformation-builder-sdk'
+    version: 1.10.1
+    dependencies:
+      '@cloudinary/url-gen': registry.npmmirror.com/@cloudinary/url-gen@1.15.0
+    dev: false
+
+  registry.npmmirror.com/@cloudinary/url-gen@1.15.0:
+    resolution: {integrity: sha512-bjU67eZxLUgoRy/Plli4TQio7q6P31OYqnEgXxeN9TKXrzr6h0DeEdIUhKI9gy3HkEBWXWWJIPh7j7gkOJPnyA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudinary/url-gen/-/url-gen-1.15.0.tgz}
+    name: '@cloudinary/url-gen'
+    version: 1.15.0
+    dependencies:
+      '@cloudinary/transformation-builder-sdk': registry.npmmirror.com/@cloudinary/transformation-builder-sdk@1.10.1
     dev: false
 
   registry.npmmirror.com/@emotion/is-prop-valid@0.8.8:
@@ -5648,6 +5689,21 @@ packages:
     version: 1.4.0
     dev: true
 
+  registry.npmmirror.com/next-cloudinary@5.20.0(next@14.1.0)(react@18.2.0):
+    resolution: {integrity: sha512-oEe//iguL/fZAJH2zTSs0Kyfv6k0vhXoA07L1rX4UzQrqEmyT741UwwasnYN1qOYSZuLdum97CbJO9JkDARwIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/next-cloudinary/-/next-cloudinary-5.20.0.tgz}
+    id: registry.npmmirror.com/next-cloudinary/5.20.0
+    name: next-cloudinary
+    version: 5.20.0
+    peerDependencies:
+      next: ^12 || ^13 || ^14
+      react: ^17 || ^18
+    dependencies:
+      '@cloudinary-util/url-loader': registry.npmmirror.com/@cloudinary-util/url-loader@4.2.0
+      '@cloudinary-util/util': registry.npmmirror.com/@cloudinary-util/util@2.4.0
+      next: registry.npmmirror.com/next@14.1.0(react-dom@18.2.0)(react@18.2.0)
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
   registry.npmmirror.com/next-themes@0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/next-themes/-/next-themes-0.2.1.tgz}
     id: registry.npmmirror.com/next-themes/0.2.1
@@ -7123,3 +7179,9 @@ packages:
     version: 0.1.0
     engines: {node: '>=10'}
     dev: true
+
+  registry.npmmirror.com/zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zod/-/zod-3.22.4.tgz}
+    name: zod
+    version: 3.22.4
+    dev: false
