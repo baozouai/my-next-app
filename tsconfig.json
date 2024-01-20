@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@request": ["./src/app/api/request.ts"]
+      "@request": ["./src/app/api/request.ts"],
+      "@prisma": ["./src/app/api/prisma.ts"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

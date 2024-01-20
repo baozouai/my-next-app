@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client'
-import request from '@request'
+import { prisma } from '@prisma';
 
-const prisma = new PrismaClient()
 
 interface UserRequest {
   userId: string

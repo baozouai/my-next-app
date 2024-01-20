@@ -5,7 +5,8 @@ const nextConfig = {
   experimental: {
     turbo: {
       resolveAlias: {
-        '@request': resolve('./src/app/api/request.ts')
+        '@request': resolve('./src/app/api/request.ts'),
+        '@prisma': resolve('./src/app/api/prisma.ts'),
       }
     }
   }
